@@ -1,16 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Previous head content remains same -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional portfolio showcasing web development projects and skills">
+    <title>Portfolio | Full-Stack Developer</title>
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body class="light-mode">
     <main>
-        <!-- Sidebar remains same -->
+        <!-- Sidebar -->
+        <aside class="sidebar" data-sidebar>
+            <div class="sidebar-info">
+                <figure class="avatar-box">
+                    <img src="./assets/images/avatar.jpg" alt="Your Name" width="150" height="150" loading="lazy">
+                </figure>
 
+                <div class="info-content">
+                    <h1 class="name">Your Name</h1>
+                    <p class="title">Full-Stack Developer</p>
+                </div>
+
+                <button class="info_more-btn" data-sidebar-btn>
+                    <span>Show Contacts</span>
+                    <ion-icon name="chevron-down"></ion-icon>
+                </button>
+            </div>
+
+            <div class="sidebar-info_more">
+                <div class="separator"></div>
+
+                <ul class="contacts-list">
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-title">Email</p>
+                            <a href="mailto:your.email@example.com">your.email@example.com</a>
+                        </div>
+                    </li>
+
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="phone-portrait-outline"></ion-icon>
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-title">Phone</p>
+                            <a href="tel:+1234567890">+123 456 7890</a>
+                        </div>
+                    </li>
+
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="location-outline"></ion-icon>
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-title">Location</p>
+                            <address>Your Location</address>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="separator"></div>
+
+                <ul class="social-list">
+                    <li class="social-item">
+                        <a href="https://github.com/" class="social-link" target="_blank" rel="noopener">
+                            <ion-icon name="logo-github"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="https://linkedin.com/" class="social-link" target="_blank" rel="noopener">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
         <div class="main-content">
             <nav class="navbar">
-                <!-- Navigation remains same -->
+                <ul class="navbar-list">
+                    <li class="navbar-item">
+                        <button class="navbar-link active" data-nav-link>About</button>
+                    </li>
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link>Resume</button>
+                    </li>
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link>Portfolio</button>
+                    </li>
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link>Contact</button>
+                    </li>
+                </ul>
             </nav>
 
             <!-- About Section -->
@@ -20,12 +115,11 @@
                 </header>
 
                 <section class="about-text" data-aos="fade-up">
-                    <p><!-- Your about text --></p>
+                    <p>Your professional summary goes here.</p>
                 </section>
 
-                <!-- Skills Section -->
                 <section class="skill">
-                    <h3 class="h3 skills-title">My skills</h3>
+                    <h3 class="h3 skills-title">My Skills</h3>
                     <ul class="skills-list content-card">
                         <li class="skills-item">
                             <div class="title-wrapper">
@@ -36,26 +130,7 @@
                                 <div class="skill-progress-fill" style="width: 90%;"></div>
                             </div>
                         </li>
-                        <!-- Add more skills -->
                     </ul>
-                </section>
-            </article>
-
-            <!-- Resume Section -->
-            <article class="resume" data-page="resume">
-                <header>
-                    <h2 class="h2 article-title">Resume</h2>
-                </header>
-
-                <section class="timeline">
-                    <div class="title-wrapper" data-aos="fade-right">
-                        <h3 class="h3">Education</h3>
-                    </div>
-                    <ol class="timeline-list">
-                        <li class="timeline-item" data-aos="fade-left">
-                            <!-- Add education items -->
-                        </li>
-                    </ol>
                 </section>
             </article>
 
@@ -72,12 +147,11 @@
                             <h3>Project Title</h3>
                             <p>Project description</p>
                             <div class="project-links">
-                                <a href="#" target="_blank" rel="noopener">Live Demo</a>
-                                <a href="#" target="_blank" rel="noopener">GitHub</a>
+                                <a href="#" class="btn" target="_blank" rel="noopener">Live Demo</a>
+                                <a href="#" class="btn" target="_blank" rel="noopener">GitHub</a>
                             </div>
                         </div>
                     </div>
-                    <!-- Add more projects -->
                 </section>
             </article>
 
@@ -108,8 +182,8 @@
 
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script src="script.js" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
