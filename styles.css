@@ -1,300 +1,78 @@
-/* Reset */
-* {
+/* General Style */
+body {
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  background-color: #f8f9fa; /* Light gray background */
+  color: #343a40; /* Dark gray for text */
+  transition: background-color 0.5s, color 0.5s; /* Smooth transition for dark mode */
 }
 
-/* Variables */
-:root {
-  --primary-color: #5f27cd;
-  --bg-color: #f5f6fa;
-  --card-bg: #ffffff;
-  --text-color: #333333;
-  --border-color: #e6e6e6;
-  --shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  --transition: all 0.3s ease;
-}
-
-/* Base */
-body {
-  font-family: "Poppins", sans-serif;
-  background: var(--bg-color);
-  color: var(--text-color);
-  line-height: 1.6;
-  overflow-x: hidden;
-}
-
-/* Layout */
-main {
-  display: grid;
-  grid-template-columns: 300px 1fr;
-  min-height: 100vh;
-}
-
-/* Sidebar */
-.sidebar {
-  background: var(--card-bg);
-  padding: 30px;
-  position: fixed;
-  width: 300px;
-  height: 100vh;
-  overflow-y: auto;
-  border-right: 1px solid var(--border-color);
-  box-shadow: var(--shadow);
-}
-
-.sidebar-info {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.avatar-box {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  margin: 0 auto 20px;
-  overflow: hidden;
-}
-
-.avatar-box img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.info-content .name {
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-
-.info-content .title {
-  color: var(--primary-color);
-  font-size: 1rem;
-}
-
-/* Main Content */
-.main-content {
-  margin-left: 300px;
-  padding: 30px;
-  background: var(--bg-color);
-}
-
-/* Navigation */
-.navbar {
-  margin-bottom: 40px;
-}
-
-.navbar-list {
+header {
+  background: #343a40; /* Dark gray for header */
+  color: #ffffff;
+  padding: 1rem 2rem;
   display: flex;
-  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header ul {
+  display: flex;
+  gap: 1rem;
   list-style: none;
 }
 
-.navbar-link {
-  padding: 10px 20px;
-  border-radius: 6px;
-  background: var(--card-bg);
-  color: var(--text-color);
-  cursor: pointer;
-  border: none;
-  transition: var(--transition);
-}
-
-.navbar-link.active,
-.navbar-link:hover {
-  background: var(--primary-color);
+header ul li a {
   color: white;
+  text-decoration: none;
+  transition: color 0.3s;
 }
 
-/* Article Sections */
-article {
-  display: none;
-  background: var(--card-bg);
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: var(--shadow);
+header ul li a:hover {
+  color: #ffc107; /* Gold accent */
 }
 
-article.active {
-  display: block;
-  animation: fadeIn 0.5s ease;
-}
-
-.article-title {
-  font-size: 2rem;
-  margin-bottom: 30px;
-  color: var(--primary-color);
-}
-
-/* Skills Section */
-.skills-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-}
-
-.skills-item {
-  padding: 20px;
-  background: var(--card-bg);
-  border-radius: 8px;
-  box-shadow: var(--shadow);
-}
-
-.skill-progress-bg {
-  height: 8px;
-  background: var(--bg-color);
-  border-radius: 4px;
-  margin-top: 10px;
-}
-
-.skill-progress-fill {
-  height: 100%;
-  background: var(--primary-color);
-  border-radius: 4px;
-  transition: width 1s ease;
-}
-
-/* Portfolio Grid */
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-}
-
-.project-card {
-  background: var(--card-bg);
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: var(--shadow);
-  transition: var(--transition);
-}
-
-.project-card:hover {
-  transform: translateY(-5px);
-}
-
-.project-card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-.project-content {
-  padding: 20px;
-}
-
-/* Contact Form */
-.contact-form {
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.input-wrapper {
-  margin-bottom: 20px;
-}
-
-input,
-textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid var(--border-color);
-  border-radius: 6px;
-  background: var(--bg-color);
-  transition: var(--transition);
-}
-
-input:focus,
-textarea:focus {
-  border-color: var(--primary-color);
-  outline: none;
-}
-
-.btn {
-  background: var(--primary-color);
-  color: white;
-  padding: 12px 30px;
+#darkModeToggle {
+  background: none;
   border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: var(--transition);
-}
-
-.btn:hover {
-  opacity: 0.9;
-  transform: translateY(-2px);
-}
-
-/* Theme Button */
-.theme-btn {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  width: 50px;
-  height: 50px;
-  background: var(--primary-color);
   color: white;
-  border: none;
-  border-radius: 50%;
   cursor: pointer;
-  box-shadow: var(--shadow);
-  transition: var(--transition);
+  font-size: 1.2rem;
+  transition: transform 0.3s;
+}
+
+#darkModeToggle:hover {
+  transform: rotate(360deg);
+}
+
+section {
+  padding: 2rem;
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+}
+
+footer {
+  background: #343a40;
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+/* Contact Details */
+.contact-details p i {
+  color: #007bff; /* Blue icons */
+  margin-right: 0.5rem;
 }
 
 /* Dark Mode */
-.dark-mode {
-  --bg-color: #1a1a1a;
-  --card-bg: #2d2d2d;
-  --text-color: #ffffff;
-  --border-color: #404040;
+body.dark-mode {
+  background-color: #121212; /* Dark background */
+  color: #e0e0e0; /* Light text */
 }
 
-/* Animations */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-/* Responsive Design */
-@media (max-width: 1024px) {
-  main {
-    grid-template-columns: 1fr;
-  }
-
-  .sidebar {
-    position: static;
-    width: 100%;
-    height: auto;
-  }
-
-  .main-content {
-    margin-left: 0;
-  }
-
-  .navbar-list {
-    flex-wrap: wrap;
-  }
-}
-
-@media (max-width: 768px) {
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .skills-list {
-    grid-template-columns: 1fr;
-  }
-
-  .article-title {
-    font-size: 1.5rem;
-  }
-}
-
-/* Accessibility */
-@media (prefers-reduced-motion: reduce) {
-  * {
-    animation-duration: 0.01ms !important;
-    transition-duration: 0.01ms !important;
-  }
+body.dark-mode header {
+  background: #1f1f1f;
 }
