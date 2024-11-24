@@ -7,115 +7,137 @@
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header section with navigation -->
+    <!-- Header with Section Buttons and Dark Mode Toggle -->
     <header>
-        <nav>
+        <div class="container header-content">
             <h1>Nanen Miracle Mbanaade</h1>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <button id="darkModeToggle" title="Toggle Dark Mode"><i class="fas fa-moon"></i></button>
-        </nav>
+            <p class="subtitle">Software Engineering Student | AI & ML Enthusiast</p>
+            <div class="nav-buttons">
+                <button class="section-button"><a href="#about"><i class="fas fa-user"></i> About Me</a></button>
+                <button class="section-button"><a href="#skills"><i class="fas fa-tools"></i> Skills</a></button>
+                <button class="section-button"><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></button>
+                <button class="section-button"><a href="#projects"><i class="fas fa-code"></i> Projects</a></button>
+                <button class="section-button"><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></button>
+            </div>
+            <div class="action-buttons">
+                <button class="cta-button"><a href="#contact">Get in Touch</a></button>
+                <button id="darkModeToggle" title="Toggle Dark Mode"><i class="fas fa-moon"></i></button>
+            </div>
+        </div>
     </header>
 
     <!-- About Me Section -->
     <section id="about">
-        <div class="profile">
-            <img src="photo.jpg" alt=" Photo" id="profile-pic">
-            <div>
-                <h2>About Me</h2>
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <img src="photo.jpg" alt="Photo" class="profile-pic">
                 <p>
-                    I am a Software Engineering student at African Leadership University, specializing in AI and ML. 
-                    Passionate about cutting-edge technology, I integrate fields like machine learning, mechatronics, and software engineering.
+                    I am a Software Engineering student at African Leadership University with a deep interest in AI, machine learning, and mechatronics. 
+                    My mission is to leverage cutting-edge technologies to build impactful and efficient solutions that integrate hardware and software seamlessly.
                 </p>
             </div>
         </div>
     </section>
 
-    <!-- Technical Skills Section -->
-    <section id="skills">
-        <h2>Technical Skills</h2>
-        <div class="tech-stack">
-            <!-- Individual skill items with icons -->
-            <div><i class="fab fa-python"></i><p>Python</p></div>
-            <div><i class="fab fa-js-square"></i><p>JavaScript</p></div>
-            <div><i class="fas fa-robot"></i><p>ROS (Robot Operating System)</p></div>
-            <div><i class="fab fa-react"></i><p>React.js</p></div>
-            <div><i class="fab fa-git-alt"></i><p>Git</p></div>
-            <div><i class="fab fa-linux"></i><p>Linux</p></div>
-            <div><i class="fas fa-database"></i><p>SQL</p></div>
-            <div><i class="fab fa-aws"></i><p>AWS</p></div>
-            <div><i class="fab fa-node-js"></i><p>Node.js</p></div>
-            <div><i class="fas fa-brain"></i><p>Machine Learning</p></div>
+    <!-- Skills Section -->
+    <section id="skills" class="section-dark">
+        <div class="container">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill"><i class="fab fa-python"></i><p>Python</p></div>
+                <div class="skill"><i class="fab fa-nginx"></i><p>nginx</p></div>
+                <div class="skill"><i class="fab fa-Docker"></i><p>Docker</p></div>
+                <div class="skill"><i class="fab fa-js-square"></i><p>JavaScript</p></div>
+                <div class="skill"><i class="fas fa-robot"></i><p>ROS</p></div>
+                <div class="skill"><i class="fab fa-react"></i><p>React.js</p></div>
+                <div class="skill"><i class="fab fa-git-alt"></i><p>Git</p></div>
+                <div class="skill"><i class="fab fa-linux"></i><p>Linux</p></div>
+                <div class="skill"><i class="fas fa-database"></i><p>SQL</p></div>
+                <div class="skill"><i class="fab fa-aws"></i><p>AWS</p></div>
+                <div class="skill"><i class="fab fa-node-js"></i><p>Node.js</p></div>
+                <div class="skill"><i class="fas fa-brain"></i><p>Machine Learning</p></div>
+            </div>
         </div>
     </section>
 
-    <!-- Experience Section -->
-    <section id="experience">
-        <h2>Experience</h2>
-        <div class="experience-item">
-            <h3>Tech Support Intern</h3>
-            <p><strong>Organization:</strong> African Leadership University</p>
-            <p><strong>Duration:</strong> 2024 - Present</p>
-            <p>
-                I troubleshoot hardware and software issues, manage networking tasks, and assist students and staff with technical challenges.
-            </p>
+    <!-- Education Section -->
+    <section id="education">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>African Leadership University</h3>
+                    <p>BSc in Software Engineering (2024 - Present)</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Graceland Secondary School, Nigeria</h3>
+                    <p>High School Certification in Science (2019)</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-grid">
-            <!-- Project Items -->
-            <article>
-                <h3>Huly Project</h3>
-                <p>An open-source project management platform integrating tools like Jira and Notion.</p>
-                <a href="https://github.com/Miranics/platform" target="_blank">View on GitHub</a>
-            </article>
-            <article>
-                <h3>Restaurant Menu/Order</h3>
-                <p>Python-based restaurant menu simulation using loops and functions.</p>
-                <a href="https://github.com/Miranics/Negpod-14_Python_Project" target="_blank">View on GitHub</a>
-            </article>
-            <article>
-                <h3>Data Aggregation API</h3>
-                <p>An API that aggregates and displays data based on user input.</p>
-                <a href="https://github.com/Miranics/alu_regex-data-extraction-group8" target="_blank">View on GitHub</a>
-            </article>
-            <article>
-                <h3>GradeBook Application</h3>
-                <p>A Python-based grade management system utilizing OOP and data structures.</p>
-                <a href="https://github.com/Miranics/grade-book-app_Nanen-Miracle-Mbanaade" target="_blank">View on GitHub</a>
-            </article>
-            <article>
-                <h3>Student Registration System</h3>
-                <p>Shell-based application to manage student records for software engineering cohorts.</p>
-                <a href="https://github.com/Miranics/Negpod_14_Shell_Project" target="_blank">View on GitHub</a>
-            </article>
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project">
+                    <i class="fas fa-project-diagram project-icon"></i>
+                    <h3>Huly Project</h3>
+                    <p>An open-source project management platform integrating tools like Jira and Notion.</p>
+                    <a href="https://github.com/Miranics/platform" target="_blank" class="button">🌟 View on GitHub</a>
+                </div>
+                <div class="project">
+                    <i class="fas fa-utensils project-icon"></i>
+                    <h3>Restaurant Menu/Order</h3>
+                    <p>Python-based restaurant menu simulation using loops and functions.</p>
+                    <a href="https://github.com/Miranics/Negpod-14_Python_Project" target="_blank" class="button">🌟 View on GitHub</a>
+                </div>
+                <div class="project">
+                    <i class="fas fa-cloud project-icon"></i>
+                    <h3>Data Aggregation API</h3>
+                    <p>An API that aggregates and displays data based on user input.</p>
+                    <a href="https://github.com/Miranics/alu_regex-data-extraction-group8" target="_blank" class="button">🌟 View on GitHub</a>
+                </div>
+                <div class="project">
+                    <i class="fas fa-book project-icon"></i>
+                    <h3>GradeBook Application</h3>
+                    <p>A Python-based grade management system utilizing OOP and data structures.</p>
+                    <a href="https://github.com/Miranics/grade-book-app_Nanen-Miracle-Mbanaade" target="_blank" class="button">🌟 View on GitHub</a>
+                </div>
+                <div class="project">
+                    <i class="fas fa-users project-icon"></i>
+                    <h3>Student Registration System</h3>
+                    <p>Shell-based application to manage student records for software engineering cohorts.</p>
+                    <a href="https://github.com/Miranics/Negpod_14_Shell_Project" target="_blank" class="button">🌟 View on GitHub</a>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact</h2>
-        <div class="contact-details">
-            <p><i class="fas fa-phone"></i> +250794134054</p>
-            <p><i class="fas fa-envelope"></i> <a href="mailto:002nasya@gmail.com">002nasya@gmail.com</a></p>
-            <p><i class="fas fa-map-marker-alt"></i> African Leadership University</p>
-            <p><i class="fab fa-github"></i> <a href="https://github.com/Miranics" target="_blank">github.com/Miranics</a></p>
+    <section id="contact" class="section-dark">
+        <div class="container">
+            <h2>Contact</h2>
+            <div class="contact-details">
+                <p><i class="fas fa-phone"></i> +250794134054</p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:002nasya@gmail.com">002nasya@gmail.com</a></p>
+                <p><i class="fas fa-map-marker-alt"></i> African Leadership University</p>
+                <p><i class="fab fa-github"></i> <a href="https://github.com/Miranics" target="_blank">github.com/Miranics</a></p>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Nanen Miracle Mbanaade</p>
+        <div class="container">
+            <p>&copy; 2024 Nanen Miracle Mbanaade | All Rights Reserved</p>
+        </div>
     </footer>
 </body>
 </html>
