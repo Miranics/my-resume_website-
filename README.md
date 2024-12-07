@@ -53,7 +53,7 @@
          Email: 002nasya@gmail.com
          GitHub: github.com/Miranics
          Phone: +250794134054
-                            Thank you for visiting my personal resume website! 😊
+                            Thank you for visiting my personal resume website ! 😊
 
 
 
