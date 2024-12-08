@@ -21,7 +21,6 @@
 
         Clone the Repository:
          bash
-         Copy code
          git clone https://github.com/Miranics/resume-website.git
          Navigate to the Project Folder:
          bash
