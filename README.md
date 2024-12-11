@@ -20,14 +20,10 @@
        Follow these steps to get a local copy of the project up and running:
 
         Clone the Repository:
-         bash
          git clone https://github.com/Miranics/resume-website.git
          Navigate to the Project Folder:
-         bash
-         Copy code
          cd resume-website
          Open the Website: Open index.html in your preferred browser.
-         Screenshots
          Light Mode
 
          Dark Mode
