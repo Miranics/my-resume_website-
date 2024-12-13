@@ -24,9 +24,6 @@
          Navigate to the Project Folder:
          cd resume-website
          Open the Website: Open index.html in your preferred browser.
-         Light Mode
-
-         Dark Mode
 
          Project Structure
           
