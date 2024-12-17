@@ -25,7 +25,7 @@
          cd resume-website
          Open the Website: Open index.html in your preferred browser.
 
-##Project Structure
+## Project Structure
           
          resume-website/
          │
