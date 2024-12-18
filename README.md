@@ -25,7 +25,6 @@
          cd resume-website
          Open the Website: Open index.html in your preferred browser.
 
-You can also view the live demo [here](miranics.github.io/my-resume_website-/).
 
 ## Project Structure
           
