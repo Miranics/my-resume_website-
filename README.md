@@ -23,7 +23,7 @@
          git clone https://github.com/Miranics/resume-website.git
          Navigate to the Project Folder:
          cd resume-website
-         Open the Website: Open index.html in your preferred browser.
+         Open the Website: Open index.html in your preferred browser .
 
 
 ## Project Structure
