@@ -3,7 +3,7 @@
 
 ## Features       
        Fully Responsive Design: The layout adapts seamlessly to desktop, tablet, and mobile screens.
-       Dark Mode: Toggle between light and dark themes with a smooth transition.
+       Dark Mode: Toggle between light and dark themes with a smooth transition.   
        Interactive Navigation: Section buttons and smooth scrolling for easy access.
        Modern Timeline: Displays education history in an elegant vertical timeline.
        Dynamic Projects: Includes project cards with relevant icons, descriptions, and links to GitHub repositories.
