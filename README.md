@@ -1,6 +1,6 @@
 # Nanen Miracle Mbanaade - Personal Resume Website      
        Welcome to my personal resume website! This project showcases my skills, experience, education, and projects in a visually appealing, mobile-friendly, and interactive format. Designed with pure HTML, CSS, and JavaScript, this website demonstrates my technical expertise and serves as a portfolio to highlight my achievements.
-
+     
 ## Features       
        Fully Responsive Design: The layout adapts seamlessly to desktop, tablet, and mobile screens.
        Dark Mode: Toggle between light and dark themes with a smooth transition.   
